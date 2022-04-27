@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS DOM </title>
+    <meta charset="utf-8">
+    <script src="main.js"></script>
+    <style>
+        h1 {
+            text-align: center;
+            width: 150%;
+        }
+        h2 {
+            text-align: left;
+             border-bottom: 8px solid #57c4d0;
+        }
+        .exe1 {
+            span{
+                color: #57c4d0;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+<h1>JS DOM</h1> 
+    <div class="exe1">
+        <h2>exe 1</h2>
+        Create an input field  and show butto. 
+        <p>When a user clicks on the monitor, he will be notified with the text that appears in the field </p>
+        <span class="exe1">
+            enter the txet thet you wont to show in the alert 
+            <input type="text" id="inputExe1" >
+        </span>
+       <span class="exe1"> 
+            <button onclick="show()">show</button>
+        </span>
+    </div>
+    <div class="exe2">
+        <h2>exe 2</h2>
+        Listen to the movement of a mouse and with each movement print the x y coordinates on the screen.
+        <p>mouse cordinsin  </p>
+        <div id="mouseCordinsin" style="color:blue;align-items:center;margin:10 auto;">
+            bla la la 
+        </div>
+    </div>
+    <div class="exe3">
+        <h2>exe 3</h2>
+        Create an input field and a show button. When the user clicks on show,
+         he will be shown the image from the address that appears in the input field.
+         <samp class="exe3">
+            <p>Enter the address of the image you want to display</p>
+             <input type="text" id="img_for_exe3"> 
+            <button onclick="showImage()">show image</button>
+        </samp>
+        <div id="div_img" style="width:100px;height:100px;"></div> 
+    </div>
+    <div class="exe4">
+        <h2>exe 4</h2>
+        Create an array of numbers and the Remove button and each click on the button will delete the last number from the array.
+         Using console.log, print the array at each step.
+         <div >
+             the array is: <span id="array_exe4">1,2,3,4,5,6,7,8,9,10</span>
+            <button onclick="remove()">remove</button>
+         </div>
+    </div>
+    <div class="exe4">
+        <h2>exe 4.2</h2>
+        Create an array of numbers and the Remove button and each click on the button will delete the last number from the array.
+         Using console.log, print the array at each step.
+         <div >
+             the array is: <span id="array_exe4b">1,2,3,4,5,6,7,8,9,10</span>
+            <button  onclick="exe4show_usingInnerText()" id="buttonRemov" >remove</button>
+          
+
+         </div>   
+    </div>
+    <div class="exe5">
+        <h2>exe 5</h2>
+        Create 4 blue, red, green, and black buttons that change the background color of the screen, respectively.
+         <div >
+                <button onclick="changeColor('blue')">blue</button>
+                <button onclick="changeColor('red')">red</button>
+                <button onclick="changeColor('green')">green</button>
+                <button onclick="changeColor('black')">black</button>
+         </div>
+    </div> 
+    <div class="exe5">
+        <h2>exe 5 b </h2>
+        Create a button for adding a color for a change and a place for input,
+         when the button is pressed a new button for changing a background color will be added
+            <div >
+                    <button onclick="addColor()">add color</button>
+                    <input type="text" id="input_color">
+            </div>
+            <div id="div_color"></div>
+    </div>
+    <div class="exe6">
+        <h2>exe 6</h2>
+        Use an array of colors, Math.random and setInterval to select every 2
+        seconds a different random background color from the array.
+            <div >
+                    <button onclick="setInterval_main()" id="button_exe6">start</button>
+            </div>
+    </div>
+    <div class="exe7">
+        <h2>exe 7</h2>
+        Use the input field and the Add button to add tasks to the list in the appropriate place.
+        <div  >
+            <input type="text" id="input_task">
+            <button onclick="addTask()">add</button>
+            <button onclick="onclick_ShowS()" id="button_exe7">Show Done</button>
+        </div>
+        <div id="ToDoList_div" class="ToDoList"></div>
+    </div>
+</body>
+</html>
